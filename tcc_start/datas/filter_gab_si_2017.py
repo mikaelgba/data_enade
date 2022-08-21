@@ -31,7 +31,7 @@ with open('New_microdados2017_arq3.csv', encoding='utf-8') as arquivo_referencia
   filtered_df = df[df['CO_CURSO'] == '107360']
 
   print(filtered_df)
-  filtered_df.to_csv("microdados2017_si.csv")
+  # filtered_df.to_csv("microdados2017_si.csv")
 
 
 
