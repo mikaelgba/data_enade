@@ -1,17 +1,17 @@
 import pandas as pd
 
-df = pd.read_csv('../datas/microdados2017_si.csv')
 
-filtered_df = df[['NU_ITEM_OFG', 'NU_ITEM_OFG_Z', 'NU_ITEM_OFG_X', 'NU_ITEM_OFG_N']]
-filtered_df_two = df[['NU_ITEM_OCE', 'NU_ITEM_OCE_Z', 'NU_ITEM_OCE_X', 'NU_ITEM_OCE_N']]
-filtered_df_three = df[['DS_VT_ACE_OFG', 'DS_VT_ACE_OCE']]
-filtered_df_three_no_null = filtered_df_three.dropna(thresh=2)
+def get_filtered_df_three_no_null():
+    df = pd.read_csv('../datas/microdados2017_si.csv')
+    filtered_df = df[['NU_ITEM_OFG', 'NU_ITEM_OFG_Z', 'NU_ITEM_OFG_X', 'NU_ITEM_OFG_N']]
+    filtered_df_two = df[['NU_ITEM_OCE', 'NU_ITEM_OCE_Z', 'NU_ITEM_OCE_X', 'NU_ITEM_OCE_N']]
+    filtered_df_three = df[['DS_VT_ACE_OFG', 'DS_VT_ACE_OCE']]
+    filtered_df_three_no_null = filtered_df_three.dropna(thresh=2)
+    return filtered_df_three_no_null
+    pass
 
-# print(filtered_df)
-# print(filtered_df_two)
-# print(filtered_df_three)
-# print(filtered_df_three_no_null)
 
+filtered_df_three_no_null = get_filtered_df_three_no_null()
 list_right_ACE_OFG = []
 list_all_ACE_OFG = []
 list_right_ACE_OCE = []
@@ -34,7 +34,7 @@ for i in filtered_df_three_no_null.values:
     list_right_ACE_OFG.append(DS_VT_ACE_OFG)
     list_all_ACE_OFG.append(DS_VT_ACE_OFG_len - 2) # -2 para remover os caracteres de aspas
     list_right_ACE_OCE.append(DS_VT_ACE_OCE)
-    list_all_ACE_OCE.append(DS_VT_ACE_OCE_len - 6) # -6 pelas aspas e tambem excluindo as 4 questoes que foram anuladas
+    list_all_ACE_OCE.append(DS_VT_ACE_OCE_len - 7) # -7 pelas aspas e tambem excluindo as 4 questoes que foram anuladas
 
 filtered_df_all = filtered_df_three_no_null.assign(right_ace_ofg = list_right_ACE_OFG,
                                       all_ace_ofg = list_all_ACE_OFG,
@@ -50,34 +50,28 @@ filtered_df_all_ord = filtered_df_all.sort_values(['percent_ace_final'])
 total_answer_right = filtered_df_all_ord[['total_right_ace']].sum() / 17
 total_answer = filtered_df_all_ord[['total_all_ace']].sum() / 17
 
-print("Respostas certas ofg, Percentual de certas ofc, Respostas certas oce e Percentual de certas oce")
-print(filtered_df_all_ord[['right_ace_ofg', 'percent_ace_ofc', 'right_ace_oce', 'percent_ace_oce']], "\n"
+print("Respostas certas ofg, Percentual de certas ofc, Respostas certas oce e Percentual de certas oce \n",
+      filtered_df_all_ord[['right_ace_ofg', 'percent_ace_ofc', 'right_ace_oce', 'percent_ace_oce']], "\n"
       "------------------------------------------------------------")
 
-print("Total de respostas, Total certas, Respostas certas oce e Percentual total de certas")
-print(filtered_df_all_ord[['total_all_ace', 'total_right_ace', 'percent_ace_final']], "\n"
+print("Total de respostas, Total certas, Respostas certas oce e Percentual total de certas \n",
+      filtered_df_all_ord[['total_all_ace', 'total_right_ace', 'percent_ace_final']], "\n"
       "------------------------------------------------------------")
 
-print("GroupBy por certas ofg")
-print(filtered_df_all_ord.groupby(['right_ace_ofg']).count(), "\n"
+print("GroupBy por certas ofg \n", filtered_df_all_ord.groupby(['right_ace_ofg']).count(), "\n"
       "------------------------------------------------------------")
 
-print("Percentual de certas ofg")
-print(filtered_df_all_ord.groupby(['percent_ace_ofc']).count(), "\n"
+print("Percentual de certas ofg \n", filtered_df_all_ord.groupby(['percent_ace_ofc']).count(), "\n"
       "------------------------------------------------------------")
 
-print("GroupBy por certas oce")
-print(filtered_df_all_ord.groupby(['right_ace_oce']).count(), "\n"
+print("GroupBy por certas oce \n", filtered_df_all_ord.groupby(['right_ace_oce']).count(), "\n"
       "------------------------------------------------------------")
 
-print("Percentual de certas oce")
-print(filtered_df_all_ord.groupby(['percent_ace_oce']).count(), "\n"
+print("Percentual de certas oce \n", filtered_df_all_ord.groupby(['percent_ace_oce']).count(), "\n"
       "------------------------------------------------------------")
 
-print("Media geral de acertos") # 17 porque dos 20 exclui 3 porque não há dados das respostas deles;
-print(total_answer_right, " de ", total_answer, "\n"
+print("Media geral de acertos \n", total_answer_right, "\n"
       "------------------------------------------------------------")
 
-print("Percetual geral de acertos")
-print(filtered_df_all_ord[['percent_ace_final']].sum() / 17, "\n"
+print("Percetual geral de acertos \n", filtered_df_all_ord[['percent_ace_final']].sum() / 17, "\n"
       "------------------------------------------------------------")
