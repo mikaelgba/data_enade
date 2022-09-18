@@ -1,10 +1,10 @@
 import csv
 import pandas as pd
 
-# read_file = pd.read_csv('microdados2017_arq3.txt')
-# read_file.to_csv('New_microdados2017_arq3.csv', index=None)
-# read_2017 = pd.read_csv('New_microdados2017_arq3.csv', header=None)
-# print(read_2017.head())
+read_file = pd.read_csv('microdados2021_arq3.txt')
+read_file.to_csv('New_microdados2021_arq3.csv', index=None)
+read_2017 = pd.read_csv('New_microdados2021_arq3.csv', header=None)
+print(read_2017.head())
 
 tags = ['NU_ANO', 'CO_CURSO', 'NU_ITEM_OFG', 'NU_ITEM_OFG_Z', 'NU_ITEM_OFG_X', 'NU_ITEM_OFG_N',
         'NU_ITEM_OCE', 'NU_ITEM_OCE_Z', 'NU_ITEM_OCE_X', 'NU_ITEM_OCE_N', 'DS_VT_GAB_OFG_FIN', 'DS_VT_GAB_OCE_FIN',
@@ -16,9 +16,10 @@ tags = ['NU_ANO', 'CO_CURSO', 'NU_ITEM_OFG', 'NU_ITEM_OFG_Z', 'NU_ITEM_OFG_X', '
         'NT_CE_D3', 'CO_RS_I1', 'CO_RS_I2', 'CO_RS_I3', 'CO_RS_I4', 'CO_RS_I5',
         'CO_RS_I6', 'CO_RS_I7', 'CO_RS_I8', 'CO_RS_I9']
 
-# print(len(tags))
+print(len(tags))
 
-with open('New_microdados2017_arq3.csv', encoding='utf-8') as arquivo_referencia:
+# with open('New_microdados2017_arq3.csv', encoding='utf-8') as arquivo_referencia:
+with open('New_microdados2021_arq3.csv', encoding='utf-8') as arquivo_referencia:
 
   table = csv.reader(arquivo_referencia, delimiter=';')
   table_two = []
@@ -31,7 +32,8 @@ with open('New_microdados2017_arq3.csv', encoding='utf-8') as arquivo_referencia
   filtered_df = df[df['CO_CURSO'] == '107360']
 
   print(filtered_df)
-  # filtered_df.to_csv("microdados2017_si.csv")
+
+  filtered_df.to_csv("microdados2021_si.csv")
 
 
 
