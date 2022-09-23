@@ -70,4 +70,4 @@ df_rename.loc[df_rename['Numeros de acertos'] > 46, 'Numeros de acertos'] = None
 df_rename.loc[df_rename['Porcetagem'] >= 1, 'Porcetagem'] = None
 
 print(df_rename)
-#df_rename.to_csv("../datas/result_si_2017.csv")
+df_rename.to_csv("../datas/result_si_2021.csv")
