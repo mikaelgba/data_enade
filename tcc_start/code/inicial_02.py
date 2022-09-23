@@ -1,19 +1,19 @@
 import pandas as pd
 import inicial as base
 
-# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2017_si.csv')
-filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2021_si.csv')
+filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2017_si.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2021_si.csv')
 
-'''list_answer_gab = ["C","C","B","B","C","E","A","D",
+list_answer_gab = ["C","C","B","B","C","E","A","D",
                    "X","X","A","C","E","Z","A","D",
                    "B","B","B","E","B","D","D","B",
                    "X","E","A","E","X","C","B","D",
-                   "C","C","C"]'''
+                   "C","C","C"]
 
-list_answer_gab = ["E","C","B","B","A","A","C","D","X","E",
+'''list_answer_gab = ["E","C","B","B","A","A","C","D","X","E",
                    "C","B","D","C","D","A","X","X","A","B",
                    "X","E","B","B","E","E","X","A","D","E",
-                   "A","C","Z","D","D",]
+                   "A","C","Z","D","D",]'''
 
 list_g_q = ["Geral" for i in range(8)]
 list_o_q = ["Específico" for j in range(27)]
@@ -47,7 +47,7 @@ o_filter = cont_answers_by_number(replace_by_filter_ACE_OCE)
 
 all_filter = g_filter
 [all_filter.append(i) for i in o_filter]
-all_p_filter = [i / 46 for i in all_filter]
+all_p_filter = [i / 17 for i in all_filter]
 '''print(all_filter)
 print(g_filter)
 print(all_filter)
@@ -66,8 +66,8 @@ df['Questões'] = number_questions
 df['Componente'] = list_g_q
 df_rename = pd.DataFrame(df)
 df_rename = df_rename[['Questões','Respostas certas','Numeros de acertos','Porcetagem','Componente']]
-df_rename.loc[df_rename['Numeros de acertos'] > 46, 'Numeros de acertos'] = None
+df_rename.loc[df_rename['Numeros de acertos'] > 35, 'Numeros de acertos'] = None
 df_rename.loc[df_rename['Porcetagem'] >= 1, 'Porcetagem'] = None
 
 print(df_rename)
-df_rename.to_csv("../datas/result_si_2021.csv")
+df_rename.to_csv("../datas/result_si_2017.csv")
