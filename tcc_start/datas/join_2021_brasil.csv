@@ -245,7 +245,7 @@ B I e IV.
 C II e III.
 D I, III e IV.
 E II, III e IV.",,,"Ética, democracia e cidadania.",,2,10,1
-8,8,Questão 9,X,77211.0,,Específico,9,"O gestor de uma instituição seguradora solicitou ao desenvolvedor de software o projeto de uma solução
+8,8,Questão 9,X,,,Específico,9,"O gestor de uma instituição seguradora solicitou ao desenvolvedor de software o projeto de uma solução
 computacional para a instituição. Após executar a análise de requisitos, esse desenvolvedor esboçou o
 diagrama UML (Unified Modeling Language), contendo os elementos apresentados na figura a seguir.
 Em relação ao que é proposto no diagrama, avalie as afirmações a seguir.
@@ -485,7 +485,7 @@ B I e III.
 C III e IV.
 D I, II e IV.
 E II, III e IV.",,,Redes de Computadores e Sistemas Distribuídos.,,8,10,12
-16,16,Questão 17,X,77211.0,,Específico,17,"O funcionamento da internet está baseado no roteamento de pacotes do tipo IP (Internet Protocol).
+16,16,Questão 17,X,,,Específico,17,"O funcionamento da internet está baseado no roteamento de pacotes do tipo IP (Internet Protocol).
 Com relação a este protocolo e aos equipamentos utilizados para roteá-lo, avalie as afirmações a seguir.
 I. Um pacote IPv4 pode ficar em loop indefinidamente, caso haja erros nas tabelas de roteamentos
 dos roteadores.
@@ -501,7 +501,7 @@ B I e III.
 C III e IV.
 D I, II e IV.
 E II, III e IV.",,,Redes de Computadores e Sistemas Distribuídos.,,1,12,12
-17,17,Questão 18,X,77211.0,,Específico,18,"A versão por estágios do Modelo Integrado de Maturidade em Capacitação (CMMI - Capability Maturity
+17,17,Questão 18,X,,,Específico,18,"A versão por estágios do Modelo Integrado de Maturidade em Capacitação (CMMI - Capability Maturity
 Model Integration) permite que o desenvolvimento de sistemas e processos de gerenciamento de uma
 organização seja avaliado e que a ele seja atribuído um nível de maturidade.
 SOMMERVILLE, I. Engenharia de Software. 9. ed. São Paulo: Pearson Prentice Hall, 2011 (adaptado).
@@ -554,7 +554,7 @@ B II e III.
 C III e IV.
 D I, II e IV.
 E I, III e IV.",,,"Fundamentos e Paradigmas de Linguagens de Programação.",,6,9,4
-20,20,Questão 21,X,77211.0,,Específico,21,"Dado o controle de estoques de uma empresa de produção e embarque de peças, observe a descrição do
+20,20,Questão 21,X,,,Específico,21,"Dado o controle de estoques de uma empresa de produção e embarque de peças, observe a descrição do
 esquema relacional abaixo para as tabelas Peça, Fornecedor e Embarque.
 Peça(CodPeça, NomePeça, CorPeça, PesoPeça)
 Fornecedor(CodFornecedor, NomeFornecedor, StatusFornecedor)
@@ -748,7 +748,7 @@ C III e IV.
 D I, II e III.
 E I, II e IV",,,"Modelagem e Gestão da Informação e do Conhecimento.
 ",,3,3,21
-26,26,Questão 27,X,77211.0,,Específico,27,"Suponha que um gestor de TI de determinada empresa está avaliando o desempenho de infraestrutura
+26,26,Questão 27,X,,,Específico,27,"Suponha que um gestor de TI de determinada empresa está avaliando o desempenho de infraestrutura
 com o objetivo de evitar despesas desnecessárias em aumento de capacidade. Ele identifica que o
 servidor da base de dados do sistema mais solicitado realiza uma média de 4,5 operações de I/O por
 transação, sendo que cada I/O realizado no disco consome em média 20 ms. Em uma hora, ele observa que
@@ -861,7 +861,7 @@ B As asserções I e II são proposições verdadeiras, mas a II não é uma jus
 C A asserção I é uma proposição verdadeira, e a II é uma proposição falsa.
 D A asserção I é uma proposição falsa, e a II é uma proposição verdadeira.
 E As asserções I e II são proposições falsas.",,,Concepção e Modelagem de Sistemas de Informação,,6,9,14
-32,32,Questão 33,Z,68632.0,,Específico,33,"Uma abordagem calcula a posição da chave na tabela com base no valor da chave. Este valor é a única
+32,32,Questão 33,Z,,,Específico,33,"Uma abordagem calcula a posição da chave na tabela com base no valor da chave. Este valor é a única
 indicação da posição. Quando a chave é conhecida, a posição na tabela pode ser acessada diretamente,
 sem fazer qualquer outro teste preliminar, conforme exigido na busca binária ou durante a pesquisa em
 uma árvore. Precisamos encontrar uma função h que possa transformar uma chave particular K — seja ela
