@@ -1,0 +1,36 @@
+,Unnamed: 0,Questões,Respostas certas,Numeros de acertos,Porcetagem,Componente,numero_questao,texto_questao,imagem_questão,assunto,objeto_de_conhecimento,area,perfil,competencia,objeto_de_conhecimento_numero
+0,0,Questão 1,C,1.0,0.0588235294117647,Geral,1,,,Saida do Reino unido da UE,Globalização e política internacional,,3,4,3
+1,1,Questão 2,C,8.0,0.4705882352941176,Geral,2,,,Agricultura familiar,"Vida urbana e vida rural; Relações de trabalho; Ciência, tecnologia e sociedade",,2,10,10;11
+2,2,Questão 3,B,4.0,0.2352941176470588,Geral,3,,,Tarifação de energia eletrica,Meio ambiente; Responsabilidade social,,3,4,6;8
+3,3,Questão 4,B,8.0,0.4705882352941176,Geral,4,,,Interpretação de texto,"Tecnologias de Informação e Comunicação; Ciência, tecnologia e sociedade",,2,6,11;13
+4,4,Questão 5,C,7.0,0.4117647058823529,Geral,5,,,Recurso de sustentabilidade,Inovação tecnológica; meio ambiente,,4,7,6;12
+5,5,Questão 6,E,14.0,0.8235294117647058,Geral,6,,,xenofobia; racismo,Processos migratórios; Relações de trabalho,,4,8,4;10
+6,6,Questão 7,A,5.0,0.2941176470588235,Geral,7,,,Produção artesanal local,"Responsabilidade social; Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,9,2
+7,7,Questão 8,D,8.0,0.4705882352941176,Geral,8,,,Desenvolvimento sustentável,"Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,7,1;9
+8,8,Questão 9,X,,,Específico,9,,,Engenharia de Requisitos,Engenharia de Software,Engenharia de Software,1,3,13
+9,9,Questão 10,X,,,Específico,10,,,,,,3,11,15
+10,10,Questão 11,A,3.0,0.1764705882352941,Específico,11,,,,,,1,3,19
+11,11,Questão 12,C,5.0,0.2941176470588235,Específico,12,,,"Gestão de pessoas; Virtualização de servidores, ",Informática e Sociedade,Gestão,2,3,22
+12,12,Questão 13,E,3.0,0.1764705882352941,Específico,13,,,Tecnologias aplicadas ao processo de negocio,Arquitetura empresarial e da tecnologia da informação,Gestão,3,3,8
+13,13,Questão 14,Z,,,Específico,14,,,,,,4,1,6
+14,14,Questão 15,A,7.0,0.4117647058823529,Específico,15,,,Modelo da Abordagem Sistémica da Instrução - ASI; Inter-relação de varias areas da tecnologia para o uso do modelo ASI,Arquitetura da informação,Gestão,4,2,7
+15,15,Questão 16,D,9.0,0.5294117647058824,Específico,16,,,Processo de design de interação; Processo de design de um software; Prototipação,Interação Humano-Computador,Engenharia de Software,4,3,17
+16,16,Questão 17,B,15.0,0.8823529411764706,Específico,17,,,Controle de Risco; Diminuição de defeitos no produto (Bugs); Tecnicas e recursos de validação de qualidade,Qualidade de Processo e Produto,Engenharia de Software,4,7,16
+17,17,Questão 18,B,5.0,0.2941176470588235,Específico,18,,,Parametrização; Customização,Arquitetura empresarial e da tecnologia da informação,,4,4,8
+18,18,Questão 19,B,8.0,0.4705882352941176,Específico,19,,,Grafos,Pesquisa Operacional,Desenvolvimento de Sistemas,5,1,5
+19,19,Questão 20,E,9.0,0.5294117647058824,Específico,20,,,Tabela verdade,Lógica Matemática e Matemática Discreta,Fundamentos de computação,5,4,1
+20,20,Questão 21,B,2.0,0.1176470588235294,Específico,21,,,Diagrama de atividades,Modelagem de Sistemas de Informação,Engenharia de Software,5,5,14
+21,21,Questão 22,D,7.0,0.4117647058823529,Específico,22,,,Arquitetura Cliente-servidor,Sistemas Operacionais; Redes de Computadores; Sistemas Distribuídos,Desenvolvimento de Sistemas,5,10,12
+22,22,Questão 23,D,6.0,0.3529411764705882,Específico,23,,,Consultas SQL; Modelo de dados relacional , Banco de Dados,Banco de dados,5,12,19
+23,23,Questão 24,B,4.0,0.2352941176470588,Específico,24,,,Media; Mediana; Moda; Desvio Patrão,Probabilidade e Estatística,Matemática e Estatística,8,13,2
+24,24,Questão 25,X,,,Específico,25,,,,,,6,6,21
+25,25,Questão 26,E,8.0,0.4705882352941176,Específico,26,,,Operadores e Expressões,"Fundamentos, Paradigmas e Linguagens de Programação",Fundamentos de computação,6,4,4
+26,26,Questão 27,A,10.0,0.5882352941176471,Específico,27,,,hardware e software skills dos integrantes de um projeto de software,Gestão do Conhecimento,Engenharia de Software,6,13,20
+27,27,Questão 28,E,4.0,0.2352941176470588,Específico,28,,,Levantamento de Requisitos; Gerenciamento de Projetos,Gerência de Projetos,Engenharia de Software,7,11,15
+28,28,Questão 29,X,,,Específico,29,,,,,,5,3,21
+29,29,Questão 30,C,7.0,0.4117647058823529,Específico,30,,,Atividades de Validação e Verificação , Engenharia de Software; Qualidade de Processo e Produto,Engenharia de Software,6,5,13;16
+30,30,Questão 31,B,8.0,0.4705882352941176,Específico,31,,,Computação em nuvem; Computação em Grid,Redes de Computadores; Sistemas Distribuído,Desenvolvimento de Sistemas,8,8,12
+31,31,Questão 32,D,6.0,0.3529411764705882,Específico,32,,,Lei e regulamentação de recursos tecnologicos ,Governança de Tecnologia da Informação e Comunicação,Gestão,8,6,9
+32,32,Questão 33,C,14.0,0.8235294117647058,Específico,33,,,Segurança da informação, Segurança e Auditoria de Sistemas,Gestão,8,9,18
+33,33,Questão 34,C,8.0,0.4705882352941176,Específico,34,,,Clusters,Arquitetura e Organização de Computadores,Desenvolvimento de Sistemas,8,10,10
+34,34,Questão 35,C,4.0,0.2352941176470588,Específico,35,,,Tipos de estrutura de dados,Algoritmos e Estruturas de Dados,Fundamentos de computação,5,4,3

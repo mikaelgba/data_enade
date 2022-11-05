@@ -1,23 +1,50 @@
 import csv
 import pandas as pd
 
-# data_entr = 'microdados2017_arq3.txt'
-data_entr = 'microdados2021_arq3.txt'
-# data_entr = 'microdados2017_arq3_brasil.txt'
-# data_entr = 'microdados2021_arq3_brasil.txt'
+# data_entr = 'txt/microdados2017_arq3.txt'
+data_entr = 'txt/microdados2021_arq3.txt'
 
-# new_date_entr = 'New_microdados2017_arq3.csv'
-# new_date_entr = 'New_microdados2021_arq3.csv'
-# new_date_entr = 'New_microdados2017_arq3_brasil.csv'
-new_date_entr = 'New_microdados2021_arq3_brasil.csv'
+# new_date_entr = 'new/New_microdados2017_arq3.csv'
+new_date_entr = 'new/New_microdados2021_arq3.csv'
 
-# date_out = 'microdados2017_si.csv'
-# date_out = 'microdados2021_si.csv'
-# date_out = 'microdados2017_si_brasil.csv'
-date_out = 'microdados2021_si_brasil.csv'
+# new_date_entr = 'new/New_microdados2017_arq3_brasil.csv'
+# new_date_entr = 'new/New_microdados2021_arq3_brasil.csv'
 
-# filter_year = 'filter2017.csv'
-filter_year = 'filter2021.csv'
+# date_out = 'microdatas/microdados2017_si.csv'
+# date_out = 'microdatas/microdados2021_si.csv'
+
+# date_out = 'microdatas/microdados2017_si_brasil.csv'
+# date_out = 'microdatas/microdados2021_si_brasil.csv'
+
+# date_out = 'microdatas/microdados2017_si_public.csv'
+# date_out = 'microdatas/microdados2021_si_public.csv'
+
+# date_out = 'microdatas/microdados2017_si_federal.csv'
+# date_out = 'microdatas/microdados2021_si_federal.csv'
+
+# date_out = 'microdatas/microdados2017_si_NE.csv'
+# date_out = 'microdatas/microdados2021_si_NE.csv'
+
+# date_out = 'microdatas/microdados2017_si_PB.csv'
+date_out = 'microdatas/microdados2021_si_PB.csv'
+
+# filter_year_csv = 'filters/filter2017.csv'
+# filter_year_csv = 'filters/filter2021.csv'
+
+# filter_year_csv = 'filters/filter2017_public.csv'
+# filter_year_csv = 'filters/filter2021_public.csv'
+
+# filter_year_csv = 'filters/filter2017_federal.csv'
+# filter_year_csv = 'filters/filter2021_federal.csv'
+
+# filter_year_csv = 'filters/filter2017_NE.csv'
+# filter_year_csv = 'filters/filter2021_NE.csv'
+
+# filter_year_csv = 'filters/filter2017_PB.csv'
+filter_year_csv = 'filters/filter2021_PB.csv'
+
+co_curso_rio_tinto = '107360'
+id_curso = 'rio tinto'
 
 read_file = pd.read_csv(data_entr)
 read_file.to_csv(new_date_entr, index=None)
@@ -37,34 +64,32 @@ tags2 = ["NU_ANO","CO_CURSO","CO_IES","CO_CATEGAD","CO_ORGACAD","CO_GRUPO","CO_M
 
 print(len(tags))
 
-with open(new_date_entr, encoding='utf-8') as arquivo_referencia:
-#with open('New_microdados2021_arq3.csv', encoding='utf-8') as arquivo_referencia:
 
-  table = csv.reader(arquivo_referencia, delimiter=';')
-  table_two = []
+def date_out_csv(area):
+    with open(new_date_entr, encoding='utf-8') as arquivo_referencia:
 
-  for l in table:
-      table_two.append(l[0].__str__().split(";"))
+        table = csv.reader(arquivo_referencia, delimiter=';')
+        table_two = []
 
-  df = pd.DataFrame.from_records(table_two, columns=tags)
-  if new_date_entr == 'New_microdados2017_arq3.csv' or new_date_entr == 'New_microdados2021_arq3.csv':
-    filtered_df = df[df['CO_CURSO'] == '107360']
-  else:
-  # ---------------------------------------------
-    df2 = pd.read_csv(filter_year, header=None)
-    print(df2)
-    list_of_single_column = df2[2].to_list()
-    print(list_of_single_column)
-    filtered_df = df[df['CO_CURSO'].isin(list_of_single_column)]
-  #----------------------------------------------
+        for l in table:
+            table_two.append(l[0].__str__().split(";"))
 
-  print(filtered_df)
-  filtered_df.to_csv(date_out)
+        df = pd.DataFrame.from_records(table_two, columns=tags)
 
+        if area == id_curso:
+            filtered_df = df[df['CO_CURSO'] == co_curso_rio_tinto]
 
+        else:
+            # ---------------------------------------------
+            df2 = pd.read_csv(filter_year_csv, header=None)
+            print(df2)
+            list_of_single_column = df2[2].to_list()
+            print(list_of_single_column)
+            filtered_df = df[df['CO_CURSO'].isin(list_of_single_column)]
+            # ----------------------------------------------
 
-
-
+        print(filtered_df)
+        filtered_df.to_csv(date_out)
 
 
-
+date_out_csv('')

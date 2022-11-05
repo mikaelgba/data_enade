@@ -1,15 +1,41 @@
 import pandas as pd
 import inicial as base
 
-# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2017_si.csv')
-# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2021_si.csv')
-# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2017_si_brasil.csv')
-filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdados2021_si_brasil.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si.csv')
+filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si.csv')
+
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si_brasil.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si_brasil.csv')
+
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si_public.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si_public.csv')
+
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si_federal.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si_federal.csv')
+
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si_NE.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si_NE.csv')
+
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2017_si_PB.csv')
+# filtered_df_three_no_null = base.get_filtered_df_three_no_null('../datas/microdatas/microdados2021_si_PB.csv')
 
 # result_final = 'result_si_2017.csv'
-# result_final = 'result_si_2021.csv'
+result_final = 'result_si_2021.csv'
+
 # result_final = 'result_si_2017_brasil.csv'
-result_final = 'result_si_2021_brasil.csv'
+# result_final = 'result_si_2021_brasil.csv'
+
+# result_final = 'result_si_2017_public.csv'
+# result_final = 'result_si_2021_public.csv'
+
+# result_final = 'result_si_2017_federal.csv'
+# result_final = 'result_si_2021_federal.csv'
+
+# result_final = 'result_si_2017_NE.csv'
+# result_final = 'result_si_2021_NE.csv'
+
+# result_final = 'result_si_2017_PB.csv'
+# result_final = 'result_si_2021_PB.csv'
 
 # 2017
 '''list_answer_gab = ["C","C","B","B","C","E","A","D",
@@ -81,6 +107,6 @@ df_rename.loc[df_rename['Porcetagem'] >= 1, 'Porcetagem'] = None
 print(df_rename['Porcetagem'].mean())
 print(df_rename)
 
-df_rename.to_csv(f"../datas/{result_final}")
+df_rename.to_csv(f"../datas/results/{result_final}")
 
 
