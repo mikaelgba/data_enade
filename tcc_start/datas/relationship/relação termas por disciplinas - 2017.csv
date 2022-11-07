@@ -1,12 +1,12 @@
 numero_questao,texto_questao,imagem_questão,assunto,objeto_de_conhecimento,area,perfil,competencia,objeto_de_conhecimento_numero
 1,,,Saida do Reino unido da UE,Globalização e política internacional,,3,4,3
-2,,,Agricultura familiar,"Vida urbana e vida rural; Relações de trabalho; Ciência, tecnologia e sociedade",,2,10,10;11
+2,,,Agricultura familiar,"Vida urbana e vida rural; Relações de trabalho; Ciência, tecnologia e sociedade",,2,10,5;10;11
 3,,,Tarifação de energia eletrica,Meio ambiente; Responsabilidade social,,3,4,6;8
 4,,,Interpretação de texto,"Tecnologias de Informação e Comunicação; Ciência, tecnologia e sociedade",,2,6,11;13
 5,,,Recurso de sustentabilidade,Inovação tecnológica; meio ambiente,,4,7,6;12
 6,,,xenofobia; racismo,Processos migratórios; Relações de trabalho,,4,8,4;10
 7,,,Produção artesanal local,"Responsabilidade social; Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,9,2
-8,,,Desenvolvimento sustentável,"Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,7,1;9
+8,,,Desenvolvimento sustentável,"Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,7,1;8;9
 9,,,Engenharia de Requisitos,Engenharia de Software,Engenharia de Software,1,3,13
 10,,,,,,3,11,15
 11,,,,,,1,3,19

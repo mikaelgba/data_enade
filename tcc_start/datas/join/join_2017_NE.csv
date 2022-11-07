@@ -1,12 +1,12 @@
 ,Unnamed: 0,Questões,Respostas certas,Numeros de acertos,Porcetagem,Componente,numero_questao,texto_questao,imagem_questão,assunto,objeto_de_conhecimento,area,perfil,competencia,objeto_de_conhecimento_numero
 0,0,Questão 1,C,533.0,0.2498827941865916,Geral,1,,,Saida do Reino unido da UE,Globalização e política internacional,,3,4,3
-1,1,Questão 2,C,1123.0,0.5264885138302859,Geral,2,,,Agricultura familiar,"Vida urbana e vida rural; Relações de trabalho; Ciência, tecnologia e sociedade",,2,10,10;11
+1,1,Questão 2,C,1123.0,0.5264885138302859,Geral,2,,,Agricultura familiar,"Vida urbana e vida rural; Relações de trabalho; Ciência, tecnologia e sociedade",,2,10,5;10;11
 2,2,Questão 3,B,813.0,0.3811533052039381,Geral,3,,,Tarifação de energia eletrica,Meio ambiente; Responsabilidade social,,3,4,6;8
 3,3,Questão 4,B,1286.0,0.602906704172527,Geral,4,,,Interpretação de texto,"Tecnologias de Informação e Comunicação; Ciência, tecnologia e sociedade",,2,6,11;13
 4,4,Questão 5,C,1307.0,0.612751992498828,Geral,5,,,Recurso de sustentabilidade,Inovação tecnológica; meio ambiente,,4,7,6;12
 5,5,Questão 6,E,1796.0,0.8420065635255509,Geral,6,,,xenofobia; racismo,Processos migratórios; Relações de trabalho,,4,8,4;10
 6,6,Questão 7,A,772.0,0.3619315518049695,Geral,7,,,Produção artesanal local,"Responsabilidade social; Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,9,2
-7,7,Questão 8,D,988.0,0.4631973745897796,Geral,8,,,Desenvolvimento sustentável,"Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,7,1;9
+7,7,Questão 8,D,988.0,0.4631973745897796,Geral,8,,,Desenvolvimento sustentável,"Ética, democracia e cidadania; sociodiversidade e multiculturalismo",,5,7,1;8;9
 8,8,Questão 9,X,,,Específico,9,,,Engenharia de Requisitos,Engenharia de Software,Engenharia de Software,1,3,13
 9,9,Questão 10,X,,,Específico,10,,,,,,3,11,15
 10,10,Questão 11,A,502.0,0.2353492733239568,Específico,11,,,,,,1,3,19
